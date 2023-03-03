@@ -1,0 +1,19 @@
+
+<table class="table table-striped table-hover table-dark mt-3">
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Code</th>
+        <th>Code Region</th>
+        <th>Voir les communes de la region</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let departement of departements">
+        <td>{{departement.nom}}</td>
+        <td>{{departement.code}}</td>
+        <td>{{departement.codeRegion}}</td>
+        <td><a routerLink="/region/{{departement.codeRegion}}/departements/{{departement.code}}/communes">Ici</a></td>
+      </tr>
+    </tbody>
+  </table>

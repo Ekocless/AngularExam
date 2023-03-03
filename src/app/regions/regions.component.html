@@ -1,0 +1,16 @@
+<table class="table table-striped table-hover table-dark mt-3">
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Code</th>
+        <th>Voir les departements</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let region of tableauRegions">
+        <td>{{region.nom}}</td>
+        <td>{{region.code}}</td>
+        <td><a routerLink="/region/{{region.code}}/departements">Ici</a></td>
+      </tr>
+    </tbody>
+  </table>

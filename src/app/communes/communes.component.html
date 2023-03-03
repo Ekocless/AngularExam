@@ -1,0 +1,22 @@
+<h1>{{ title }}</h1>
+
+<table class="table table-striped table-hover table-dark mt-3">
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Code</th>
+        <th>Code Departement</th>
+        <th>Code Postaux</th>
+        <th>Population</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let commune of communes">
+        <td>{{commune.nom}}</td>
+        <td>{{commune.code}}</td>
+        <td>{{commune.codeDepartement}}</td>
+        <td>{{commune.codesPostaux}}</td>
+        <td>{{commune.population}}</td>
+      </tr>
+    </tbody>
+  </table>
